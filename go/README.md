@@ -1,3 +1,5 @@
+#Correct the file function in order to download the sample
+
 # Installation
 
 `go version` Make sure a recent version of go is installed
