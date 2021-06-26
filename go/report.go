@@ -83,7 +83,8 @@ func (c *Client) SampleTaskReport(ctx context.Context, sampleID, taskID string) 
 }
 
 func (c *Client) SampleTaskFile(ctx context.Context, sampleID, taskID, filename string) (io.ReadCloser, error) {
-	path := "/v0/samples/" + sampleID + "/" + taskID + "/" + filename
+	//path := "/v0/samples/" + sampleID + "/" + taskID + "/" + filename
+	path := "/v0/samples/" + sampleID + "/sample"
 	return c.requestRawFile(ctx, http.MethodGet, path)
 }
 
